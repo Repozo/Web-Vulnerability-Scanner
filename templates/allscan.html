@@ -1,0 +1,69 @@
+<html>
+<body>
+    <center><h1 style="color: gold;">Web vunerability Scaning Framework</h1></center>
+    <center><h1 style="color: greenyellow;">Scan report</h1></center>
+    <center><h1 style="color: green;">List of open port:</h1></center>
+    <div class="hnji">
+      <ol> 
+        <!-- For loop logic of jinja template -->
+        {%for i in range(0, leport)%} 
+          <h2 class = "innertext" ><li >{{portre[i]}}</li> </h1>
+        {%endfor%} 
+          
+        </ol> 
+    </div>
+   
+    <center><h1 style="color: green;">Followng subdomains were found:</h1></center>
+    <div>
+        <ol>
+            <!-- For loop logic of jinja template -->
+            {%for i in range(0, lesubdom)%}
+            <h2 class = 'innertext'>
+                <li>{{resubdom[i]}}</li>
+            </h1>
+            {%endfor%}
+
+        </ol>
+    </div>
+
+    <center><h1 style="color: green;">XSS vunerable urls:</h1></center>
+    <div>
+      <ol> 
+        <!-- For loop logic o"f jinja template -->
+        {% if lexss >= 3 %}
+          <h2><li>{{ur+xssre["action"]}}</li> </h1>
+          <h2 class = "kesheho" >details are:
+            {{xssre["inputs"]}}
+        {% else %}
+            <h2 class = "innertext" >Not vunerable to xss</h2>
+        {% endif %}
+          </h2>
+        </ol> 
+    </div>
+   
+   
+   <center> <h1 style="color: green;">Following assets were found:</h1></center>
+    <div>
+        <ol>
+            <!-- For loop logic of jinja template -->
+            {%for i in range(0, lefile)%}
+            <h2 class = 'innertext'>
+                <li><a href={{refile[i]}}>{{refile[i]}}</a></li>
+            </h1>
+            {%endfor%}
+
+        </ol>
+    </div>
+
+    <h2 style="color: red;">For Sql injection please refer to specific attack as it need a specific url</h2>
+
+
+    <div style="text-align: right;">
+    <h1 style="color: seagreen;">Created by :</h1>
+        <h2 style="color: red;;">Aamir Ahmed</h2>
+        <h2 style="color: red;">Vivek Dwivedi</h2>
+        <h2 style="color: red;">Dheeraj Kumar Thakur</h2>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+body{-webkit-user-select:none;-moz-user-select:-moz-none;
+    -ms-user-select:none;user-select:none}
+body{
+
+    background-color: rgb(7, 7, 7);
+}
+
+.header{
+
+    color: rgb(8, 241, 27);
+    text-align: center;
+    transform: translateY(120px);
+    font-weight: normal;
+    font-size: 45px;
+    display:block;
+}
+
+button{
+
+  background-color: rgb(7, 7, 7);
+  border: 2px solid rgb(8, 241, 27);
+  color: rgb(8, 241, 27);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.first{
+    position: absolute;
+    top :310px;
+    left: 680px;
+    padding: 40px 40px;
+}
+
+.second{
+
+    position: absolute;
+    top :380px;
+    left: 900px;
+    padding: 60px 60px;
+}
+
+.top , .left {
+
+    width: 112px;
+    height: 47px;
+    border-bottom: 1px solid rgb(8, 241, 27);
+    position: absolute;
+}
+
+.left{
+
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    
+}
+
+.hung {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(7, 7, 7);
+    position: relative;
+    animation-name: example;
+    animation-duration: 6s;
+    border: 1px solid  rgb(8, 241, 27);
+    animation-iteration-count: infinite;
+    transform: translate(2px, 10px)
+  }
+  
+  @keyframes example {
+    0%   {background-color:rgb(7, 7, 7); left:0px; top:0px;}
+    50%  {background-color:rgb(7, 7, 7); left:600px; top:0px;}
+    100% {background-color:rgb(7, 7, 7); left:0px; top:0px;}
+  }
+
+.hung1{
+
+    width: 10px;
+    height: 10px;
+    background-color: rgb(7, 7, 7);
+    position: relative;
+    animation-name: example1;
+    animation-duration: 6s;
+    border: 1px solid  rgb(8, 241, 27);
+    animation-iteration-count: infinite;
+    transform: translate(2px, 10px)
+
+}
+
+@keyframes example1{
+
+    0%   {background-color:rgb(7, 7, 7); left:0px; top:200px;}
+    50%  {background-color:rgb(7, 7, 7); left:0px; top:0px;}
+    100% {background-color:rgb(7, 7, 7); left:0px; top:200px;}
+}
+
+.inputformate{
+
+    width: 440px;
+    box-sizing: border-box;
+    border: 2px solid rgb(8, 241, 27) ;
+    font-size: 16px;
+    background-color:rgb(7, 7, 7);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 10px 10px 10px 10px;
+    color:rgb(8, 241, 27);
+    letter-spacing: 2px;
+    position: absolute;
+    top:600px;
+    left:600px;
+  }
+
+.submitformate{
+
+    width: 140px;
+    box-sizing: border-box;
+    border: 2px solid rgb(8, 241, 27) ;
+    font-size: 16px;
+    background-color:rgb(7, 7, 7);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 10px 10px 10px 10px;
+    color:rgb(8, 241, 27);
+    letter-spacing: 2px;
+    position: absolute;
+    top:600px;
+    left:1040px;
+}
+
+.sql{
+
+    position: absolute;
+    top :380px;
+    left:1200px;
+    padding: 10px,10px;
+}
+.port{
+    position: absolute;
+    top :420px;
+    left:1200px;
+}
+.Directory{
+    position: absolute;
+    top :460px;
+    left:1200px;
+}
+.Xss{
+    position: absolute;
+    top :500px;
+    left:1200px;
+
+}
+.Subdomain{
+    position: absolute;
+    top :540px;
+    left:1200px;
+
+}

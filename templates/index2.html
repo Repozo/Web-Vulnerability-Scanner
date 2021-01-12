@@ -1,0 +1,51 @@
+<doctype html>
+    <html>
+
+    <head>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <link href='../static/css/main.css' rel='stylesheet'>
+        <div class='header'> Web Vulnerablity Scanner Framework</div>
+        <div class='bodypart'>
+            <form method="POST" id="myform" action="">
+                <select class="option" data-trigger="" name="choices-single-defaul" id="attack" onchange=setAction();>
+                <option >What to Perform</option>
+                <option value="xss">XSS Test</option>
+                <option value="sql">SQL Injection check</option>
+                <option value="ports">Port Scan</option>
+                <option value="subdomain">Domain Scan</option>
+                <option value="discover">File path traversal</option>
+                <option value="fullscan">Complete scan</option>
+              </select>
+
+                <input id="search" class='entervalues' name="ipaddress" type="text" placeholder="Enter your IP or web-adress" />
+                <button type='submit'><i class="fa fa-search"></i></button>
+
+            </form>
+        </div>
+
+        <script>
+            function setAction() {
+                var attackType = document.getElementById('attack').value;
+                // alert(attackType);
+                var formAction = document.getElementById('myform');
+                formAction.action = attackType;
+                if (attackType == "xss") {
+                    search = document.getElementById("search");
+                    search.placeholder = "Please enter full url like abc.com";
+                } else if (attackType == "discover") {
+                    search = document.getElementById("search");
+                    search.placeholder = "Please enter pnly domain name e.g abc.com";
+                } else {
+                    search = document.getElementById("search");
+                    search.placeholder = "Please enter IP or URL";
+                }
+            }
+        </script>
+
+    </body>
+
+    </html>

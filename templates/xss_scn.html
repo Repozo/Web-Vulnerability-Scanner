@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../static/css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 class = "kaji" >XSS vunerable urls:</h1>
+    <div class="hnji">
+      <ol> 
+        <!-- For loop logic o"f jinja template -->
+        {% if le >= 3 %}
+          <h1><li>{{ur+p["action"]}}</li> </h1>
+          <h2 class = "kesheho" >details are:
+            {{p["inputs"]}}
+        {% else %}
+            <h1 class = "innertext" >Not vunerable to xss</h1>
+        {% endif %}
+          </h2>
+        </ol> 
+        <a href = "/"><button>Back</button></a>
+    </div>
+  </body>
+</html>

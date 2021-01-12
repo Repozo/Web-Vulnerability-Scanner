@@ -1,0 +1,99 @@
+body{
+    
+  background-image:url("webv1.jpg");
+  
+}
+
+.header{
+
+margin: auto;
+width: 30%;
+padding: 10px;
+text-align: center;
+color:green;
+font-size: 40px;
+transform: translateY(100px);
+font-weight: bolder;
+/* text-shadow:1px 1px 1px black; */
+
+}
+
+button{
+  
+width: 60px;
+padding: 12px;
+background: green;
+color: white;
+font-size: 17px;
+border: 1px solid grey;
+border-left: none;
+cursor: pointer;
+}
+
+button:hover {
+background: #0b7dda;
+}
+
+input{
+padding: 10px;
+font-size: 17px;
+border: 1px solid grey;
+width: 550px;
+background-color: #f1f1f1;
+letter-spacing:2px;
+}
+
+select{
+  
+padding: 10px;
+font-size: 17px;
+border: 1px solid grey;
+width: 250px;
+background-color: green;
+color:white;
+  
+}
+
+* {
+box-sizing: border-box;
+}
+
+.bodypart{
+  
+margin: auto;
+width: 80%;
+padding: 10px;
+text-align: center;
+color:green;
+font-size: 40px;
+transform: translateY(150px);
+
+}
+
+.kaji{
+
+  color: green ;
+  text-align: center;
+
+}
+
+.hnji{
+   
+    margin: auto;
+    width :30%;
+    align-items: center;
+
+
+}
+
+.innertext{
+
+  align-self: center;
+}
+
+.kesheho{
+
+  color: green ;
+  text-align: center;
+
+}

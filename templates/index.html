@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+
+<body>
+
+    <div class="top"></div>
+    <div class="hung1"></div>
+    <div class="left"></div>
+    <div class="hung"></div>
+    <h1 class="header ">Web Vulnerability Scanner Framework</h1>
+
+    <button class="first" onclick="sqlInjectionAlert()">Complete Scan</button>
+
+    <button class="second" onclick="IndivisualScan()">Specific Scan</button>
+    <div class='alerting'> For Sql You Have To Do Specific Scan</div>
+    <div id="formtext">
+        <div>
+
+
+            <script>
+                function sqlInjectionAlert() {
+
+
+                    document.getElementById("formtext").innerHTML = "<form action = 'fullscan' method = 'POST' id = 'myform' ><input type = 'text' name='ipaddress' class = 'inputformate' placeholder = 'Enter Url' ><input class = 'submitformate' type = 'submit' name = 'submit' value = 'scan'></form>";
+                }
+
+                function IndivisualScan() {
+
+
+                    document.getElementById("formtext").innerHTML = "<button class = 'sql' onclick = 'sql()'>Sql Injection</button><button class = 'port' onclick = 'port()'>Port Scan</button><button class = 'Xss' onclick = 'Xss()'>XSS</button><button class = 'Directory' onclick = 'Directory()'>File path traversal</button><button class = 'Subdomain' onclick = 'Subdomain()'>Sensitive subdomains</button>";
+                }
+
+                function sql() {
+
+                    document.getElementById("formtext").innerHTML = "<form action = 'sql' method = 'POST' id = 'myform' ><input type = 'text' class = 'inputformate' placeholder = 'Enter Url' name='ipaddress'><input class = 'submitformate' type = 'submit' name = 'submit' value = 'scan'></form>";
+                }
+
+                function port() {
+
+                    document.getElementById("formtext").innerHTML = "<form action = 'ports' method = 'POST' id = 'myform' ><input type = 'text' name='ipaddress' class = 'inputformate' placeholder = 'Enter Url' ><input class = 'submitformate' type = 'submit' name = 'submit' value = 'scan'></form>";
+                }
+
+                function Xss() {
+
+                    document.getElementById("formtext").innerHTML = "<form action = 'xss' method = 'POST' id = 'myform' ><input type = 'text' name='ipaddress' class = 'inputformate' placeholder = 'Enter Url' ><input class = 'submitformate' type = 'submit' name = 'submit' value = 'scan'></form>";
+                }
+
+                function Directory() {
+
+                    document.getElementById("formtext").innerHTML = "<form action = 'discover' method = 'POST' id = 'myform' ><input type = 'text' name='ipaddress' class = 'inputformate' placeholder = 'Enter Url' ><input class = 'submitformate' type = 'submit' name = 'submit' value = 'scan'></form>";
+                }
+
+                function Subdomain() {
+
+                    document.getElementById("formtext").innerHTML = "<form action = 'subdomain' method = 'POST' id = 'myform' ><input type = 'text' name='ipaddress' class = 'inputformate' placeholder = 'Enter Url' ><input class = 'submitformate' type = 'submit' name = 'submit' value = 'scan'></form>";
+                }
+            </script>
+
+</body>
+
+</html>
